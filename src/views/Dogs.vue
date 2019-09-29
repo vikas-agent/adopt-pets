@@ -1,12 +1,20 @@
 <template lang="html">
   <div id="dogs">
-    <h2>Dogs</h2>
+    <h2>Dogs for Adoption</h2>
+    <b-table striped hover :items="dogs"></b-table>
+
   </div>
 </template>
 
 <script>
+import dogs from '@/data/dogs'
 export default {
-  name: 'Dogs'
+  name: 'Dogs',
+  data() {
+    return {
+      dogs
+    }
+  }
 }
 </script>
 

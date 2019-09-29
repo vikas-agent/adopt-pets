@@ -4,10 +4,11 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/cats">Cats</router-link> |
       <router-link to="/dogs">Dogs</router-link> |
-      <router-link to="/pet">Pets</router-link> |
-      <router-link to="/about">About</router-link> 
+      <router-link to="/about">About</router-link>
     </div>
-    <router-view/>
+    <b-container>
+      <router-view/>
+    </b-container>
   </div>
 </template>
 
