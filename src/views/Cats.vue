@@ -4,20 +4,24 @@
      <b-table striped hover :items="cats">
        <template v-slot:cell(name)="data">
      <!-- `data.value` is the value after formatted by the Formatter -->
-     <router-link :to="`/pets/${data.index}`">{{data.value}}</router-link>
+     <router-link :to="`/pets/cats/${data.index}`">{{data.value}}</router-link>
    </template>
      </b-table>
   </div>
 </template>
 
 <script>
-import cats from '@/data/cats'
+import {mapState} from 'vuex'
 export default {
   name: 'Cats',
   data() {
     return {
-      cats
       }
+  },
+  computed: {
+    ...mapState([
+      'cats'
+    ])
   }
 }
 </script>
