@@ -6,6 +6,7 @@ export default [
     age: 7,
     color: 'black/white',
     weight: 34,
+    species: 'dogs',
     location: 'fourside',
     notes: 'Pure breed. Trained for competitions.'
   },
@@ -16,6 +17,8 @@ export default [
     age: 17,
     color: 'orange/white',
     weight: 37,
+    species: 'dogs',
+
     location: 'threed',
     notes: 'Super friendly'
   },
@@ -25,6 +28,8 @@ export default [
     gender: 'male',
     age: 9,
     color: 'gray',
+    species: 'dogs',
+
     weight: 68,
     location: 'threed',
     notes: 'Super friendly'
@@ -34,6 +39,8 @@ export default [
     breed: 'golden retriever',
     gender: 'female',
     age: 2,
+    species: 'dogs',
+
     color: 'black',
     weight: 44,
     location: 'threed',
